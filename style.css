@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Typo+Grotesk+Thin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/salma-pro');
+@import url(https://db.onlinewebfonts.com/c/74bd5f5084d52b0601296767552f32ed?family=Bluebird+SFBold+Extended);
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/coolvetica');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 15px;
+}
+
+
+body{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar.shrink {
+    height: 40px;
+    padding: 5px;
+  }
+
+  .logo-image {
+    max-width: 150px;
+  }
+}
+
+
+
+
+header {
+    position: fixed; /* Променено от relative на fixed */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background-color: white;
+}
+
+
+  .logo-container {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+
+.logo-image {
+  width: 50px; 
+  height: auto; 
+  margin-right: 5px; 
+}
+
+header h4 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .tekst{
+    padding:15px;
+    overflow: hidden;
+  }
+
+  .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #f0f0f0 0%, #dddddd 50%);
+    color: yellow;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+
+  .background-image h2 {
+    font-family: 'Salma Pro', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: black;
+  }
+
+
+
+  .hero {
+    height: 900px;
+    width: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: -5;
+    overflow-x: hidden;
+}
+
+.hero h2 {
+    font-size: 46px;
+    margin: 0;
+    
+}
+
+
+.home-container-full{
+  background-color: #e5e7eb;
+}
+  
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Разпределя елементите равномерно */
+  align-items: center; /* Центрира елементите вертикално */
+  padding: 20px;
+  background-color: black;
+}
+
+.home-text {
+  order: 1; /* Позиционира го наляво */
+  font-size: 40px;
+  color:white;
+}
+
+.home-text1 {
+  order: 2; /* Позиционира го надясно */
+  font-size: 30px;
+  color:white;
+  font-family: "Poppins", sans-serif;
+}
+
+.description {
+  padding: 20px;
+}
+
+.description1{
+  font-family: 'Coolvetica', sans-serif;
+  color: #929da8;
+}
+
+ .hash {
+  color: #3a0ca3;
+  font-family: 'Coolvetica', sans-serif;
+  font-size:17px;
+  text-transform: lowercase;
+}
+
+.flavour h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size:20px;
+  font-style: normal;
+}
+
+
+/* animation */
+
+.intro {
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+    font-size: 160px;
+  }
+
+  .logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+  }
+
+  .logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+  }
+
+  .logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+  }
+
+  .logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+  }
+
+  .intro span {
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    .intro span {
+      font-size: 25px;
+    }
+  }
